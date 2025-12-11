@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Bootcamp – Day 3 (Typography + Colors)</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-900 text-white min-h-screen">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+    <!-- HEADER -->
+    <header>
+      <h1 class="text-3xl font-bold">Day 3 – Typography & Colors</h1>
+      <p class="text-slate-300 mt-2">
+        Topic: text sizes, font weights, text colors, and basic hierarchy on a dark background.
+      </p>
+    </header>
+
+    <!-- SECTION 1 — DAY 3 NOTES -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+        Notes (What I&apos;m Learning Today)
+      </h2>
+
+      <ul class="list-disc list-inside space-y-2 text-slate-300">
+        <li>
+          How to use <span class="font-mono text-sky-400">text-sm</span>,
+          <span class="font-mono text-sky-400">text-base</span>,
+          <span class="font-mono text-sky-400">text-lg</span>,
+          <span class="font-mono text-sky-400">text-xl</span>,
+          <span class="font-mono text-sky-400">text-2xl</span>, etc. for font sizes.
+        </li>
+        <li>
+          How <span class="font-mono text-sky-400">font-normal</span>,
+          <span class="font-mono text-sky-400">font-medium</span>,
+          <span class="font-mono text-sky-400">font-semibold</span>,
+          <span class="font-mono text-sky-400">font-bold</span> affect weight.
+        </li>
+        <li>
+          Using text colors like
+          <span class="font-mono text-sky-400">text-white</span>,
+          <span class="font-mono text-sky-400">text-slate-100</span>,
+          <span class="font-mono text-sky-400">text-slate-300</span>,
+          <span class="font-mono text-sky-400">text-slate-400</span>,
+          and an accent like <span class="font-mono text-sky-400">text-sky-400</span>.
+        </li>
+        <li>
+          Line height utilities like
+          <span class="font-mono text-sky-400">leading-normal</span> and
+          <span class="font-mono text-sky-400">leading-relaxed</span> to improve readability.
+        </li>
+        <li>
+          Letter spacing with
+          <span class="font-mono text-sky-400">tracking-wide</span> or
+          <span class="font-mono text-sky-400">tracking-tight</span> (good for labels).
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SECTION 2 — PRACTICE AREA    -->
+    <!-- ============================= -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+        Practice (Day 3 – Typography & Colors)
+      </h2>
+
+      <p class="text-slate-300">
+        Use this section to practice today&apos;s concepts: build a text scale, experiment
+        with colors, and try simple button styles. Keep it small and focused.
+      </p>
+
+      <!--
+        TODO: Day 3 Practice Ideas
+
+        1) Text Scale
+           - Create 4–5 text styles:
+             - H1 → e.g. text-3xl or text-4xl font-bold
+             - H2 → text-2xl or text-3xl font-semibold
+             - Subtitle → text-xl text-slate-300
+             - Body → text-base text-slate-300 leading-relaxed
+             - Small caption → text-sm text-slate-400
+
+        2) Color Experiments
+           - Try different text colors:
+             - text-white vs text-slate-100 vs text-slate-300
+             - Accent: text-sky-400 (or swap for text-emerald-400)
+           - Decide which combos you like most on bg-slate-900.
+
+        3) Buttons
+           - Create a primary button:
+             - bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition
+           - Create a secondary / ghost button:
+             - border border-slate-600 text-slate-200 hover:bg-slate-800 px-6 py-3 rounded-lg
+
+        You can add your HTML directly below this comment.
+      -->
+
+      <!-- Your Day 3 practice markup goes here -->
+      <div class="space-y-4">
+        <!-- Example: you will add your headings, paragraphs, and buttons here. -->
+        <section id="text-scale">
+            <h1 class="text-3xl font-bold">This is an H1 element.</h1>
+            <h2 class="text-2xl font-semibold">This is an H2 element.</h2>
+            <p class="text-xl text-slate-300">Subtitle Text</p>
+            <p class="text-base text-slate-300 leading-relaxed">Body Text</p>
+            <p class="text-sm text-slate-400">Small Caption Text</p>
+        </section>
+
+        <section id="color-experiments">
+            <p class="text-white">This is text with color 1: <code>text-white</code></p>
+            <p class="text-slate-100">This is text with color 2: <code>text-slate-100</code></p>
+            <p class="text-slate-300">This is text with color 3: <code>text-slate-300</code></p>
+            <br>
+            <p class="text-sky-400 bg-slate-900">This is text with color accent <code>text-sky-400</code></p>
+            <p class="text-emerald-400 bg-slate-900">This is text with color accent <code>text-emerald-400</code></p>
+            <p>In my opinion, I would prefer <code>text-emerald-400</code> over <code>text-sky-400</code></p>
+        </section>
+
+        <section id="buttons">
+            <button id="primary" title="primary" class="bg-sly-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition">Primary Button</button>
+
+            <button id="secondary" title="secondary" class="border border-slate-600 text-slate-200 hover: bg-slate-800 px-6 py-3 rounded-lg">Secondary Button</button>
+        </section>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
