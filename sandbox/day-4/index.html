@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Responsive Breakpoints</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <div class="max-w-5xl mx-auto sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <!-- Header -->
+        <header>
+            <h1 class="text-3xl font-bold">Day 4 - Responsive Breakpoints</h1>
+            <p class="text-slate-300 mt-2">
+                Topic: using <span class="font-mono text-sky-400">sm:</span>,
+                <span class="font-mono text-sky-400">md:</span>,
+                <span class="font-mono text-sky-400">lg:</span> to change text, layout, and spacing at different screen sizes.
+            </p>
+        </header>
+
+        <!-- Section 1 - Notes -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+                <li>
+                    Tailwind is mobile-first: base classes apply to all sizes, and
+                    <span class="font-mono text-sky-400">sm:</span>,
+                    <span class="font-mono text-sky-400">md:</span>,
+                    <span class="font-mono text-sky-400">lg:</span> override them at larger breakpoints.
+                </li>
+                <li>
+                    Responsive text example:
+                    <span class="font-mono text-sky-400">text-2xl sm:text-3xl md:text-4xl lg:text-5xl</span>
+                    grows as the screen width increases.
+                </li>
+                <li>
+                    Responsive layout example:
+                    <span class="font-mono text-sky-400">flex flex-col md:flex-row</span>
+                    stacks content on mobile and switches to side-by-side on medium screens.
+                </li>
+                <li>
+                    Responsive spacing:
+                    <span class="font-mono text-sky-400">p-4 md:p-8 lg:p-12</span> or
+                    <span class="font-mono text-sky-400">gap-4 md:gap-8</span>
+                    to give content more breathing room on larger screens.
+                </li>
+                <li>
+                    Responsive width:
+                    <span class="font-mono text-sky-400">w-full md:w-1/2</span> lets elements occupy full width on mobile
+                    and half width on desktop.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2 - Practice Area -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Practice (Day 4 - Breakpoints & Layouts)
+            </h2>
+
+            <p class="text-slate-300">
+                Use this section to practice responsive text, layout, and spacing.
+                You can also start (or fully build) your responsive hero mock here.
+            </p>
+
+            <!--
+                TODO: Day 4 Practice Ideas
+
+                1) Responsive Heading
+                - Create a single <h1> or <p> that changes size at breakpoints:
+                    - Example: text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                - Optionally change color at md: or lg: (e.g., md:text-sky-400).
+
+                2) Responsive Two-Column Layout
+                - Create a container:
+                    - class="flex flex-col md:flex-row gap-6"
+                - Inside:
+                    - Left block: heading + paragraph (text content)
+                    - Right block: a simple placeholder (e.g., bg-slate-800 h-32 rounded-xl)
+                - Check that:
+                    - On mobile: blocks stack vertically
+                    - On md and above: blocks sit side-by-side
+
+                3) Responsive Spacing
+                - Wrap your layout in a container with:
+                    - p-4 sm:p-6 md:p-10
+                - Resize the screen and notice how padding grows on larger sizes.
+
+                4) Hero Mock (optional here, or in a separate file)
+                - Once you feel good with breakpoints:
+                    - Build your own hero layout:
+                    - Left: label, heading, subheading, buttons
+                    - Right: placeholder visual box
+                    - Use:
+                    - flex flex-col md:flex-row
+                    - text-*, sm:*, md:*, lg:* for font sizes
+                    - responsive padding/gap
+
+                You can add all your practice HTML directly under this comment.
+                Keep it simple and focus on understanding how the breakpoints change things.
+            -->
+
+            <div class="space-y-6">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:text-sky-400">
+                    This is a H1 element that will change depending on the breakpoints.
+                </h1>
+
+                <div id="container" class="flex flex-col md:flex-row gap-6 p-4 sm:p-6 md:p-10">
+                    <div id="left">
+                        <h1 class="text-3xl">Left Column Header</h1>
+                        <p>This paragraph is placed on the left side and will be used as text content.</p>
+                    </div>
+                    <div id="right" class="bg-slate-800 h-32 rounded-xl">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
