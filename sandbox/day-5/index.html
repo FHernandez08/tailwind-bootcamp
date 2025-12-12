@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Grids & Cards</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <header>
+            <h1 class="text-3xl font-bold">Day 5 - Grids & Cards</h1>
+            <p class="text-slate-300 mt-2">
+                Topic: grid layouts, card components, and preparing for real project structure.
+            </p>
+        </header>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+                <li>
+                    Using <span class="font-mono text-sky-400">grid</span> to create two-dimensional layouts (rows + columns).
+                </li>
+                <li>
+                    Defining columns with
+                    <span class="font-mono text-sky-400">grid-cols-1</span>,
+                    <span class="font-mono text-sky-400">md:grid-cols-2</span>,
+                    <span class="font-mono text-sky-400">lg:grid-cols-3</span>.
+                </li>
+                <li>
+                    Controlling spacing between cards using
+                    <span class="font-mono text-sky-400">gap-4</span>,
+                    <span class="font-mono text-sky-400">gap-6</span>,
+                    <span class="font-mono text-sky-400">gap-8</span>.
+                </li>
+                <li>
+                    Building reusable card styles with:
+                    <span class="font-mono text-sky-400">bg-slate-800</span>,
+                    <span class="font-mono text-sky-400">p-6</span>,
+                    <span class="font-mono text-sky-400">rounded-xl</span>,
+                    <span class="font-mono text-sky-400">shadow</span>.
+                </li>
+                <li>
+                    Understanding when to use grid (sections with many items) vs flex (alignment within a single card).
+                </li>
+            </ul>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">Practice</h2>
+            <p class="text-slate-300">
+                Use this section to practice grid layouts and card styling. Keep it small: 2-4 cards max.
+            </p>
+
+            <!--
+                TODO: Day 5 Practice Ideas
+
+                1) Grid Container
+                - Create a grid container with:
+                    - class="grid grid-cols-1 md:grid-cols-2 gap-6"
+
+                2) Card Component
+                - Each card should include:
+                    - Title (text-lg or text-xl font-semibold)
+                    - Short description (text-slate-300)
+                - Card styles to try:
+                    - bg-slate-800
+                    - p-6
+                    - rounded-xl
+                    - shadow or shadow-lg
+
+                3) Hover (optional)
+                - Add:
+                    - transition
+                    - hover:-translate-y-1
+                    - hover:shadow-lg
+
+                4) Reflection
+                - Ask yourself:
+                    - Would this work for a Projects section?
+                    - Would this work for Skills or Experience?
+
+                Add your grid + cards directly below this comment.
+            -->
+
+            <!-- Your Day 5 practice markup goes here -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Example placeholder cards — replace or expand -->
+                <div class="bg-slate-800 p-6 rounded-xl shadow transition hover:-translate-y-1 hover:shadow-lg">
+                    <h3 class="text-lg font-semibold mb-2">Card Title</h3>
+                    <p class="text-slate-300">
+                        Short description goes here. Keep it concise and readable.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl shadow transition hover:-translate-y-1 hover:shadow-lg">
+                    <h3 class="text-lg font-semibold mb-2">Card Title</h3>
+                    <p class="text-slate-300">
+                        Short description goes here. Keep it concise and readable.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl shadow transition hover:-translate-y-1 hover:shadow-lg">
+                    <h3 class="text-lg font-semibold mb-2">Card Title</h3>
+                    <p class="text-slate-300">
+                        Short description goes here. Keep it concise and readable.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl shadow transition hover:-translate-y-1 hover:shadow-lg">
+                    <h3 class="text-lg font-semibold mb-2">Card Title</h3>
+                    <p class="text-slate-300">
+                        Short description goes here. Keep it concise and readable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 
+                This will be great to use for the skills section to just highlight the languages and for the projects where I can add specific details like buttons and links and stuff like that so then I can combine flex and grid = use grid for the project cards and then flex for the content inside the cards.
+            -->
+        </section>
+    </div>
+</body>
+</html>
