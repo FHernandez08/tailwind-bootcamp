@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 - Dark Mode Basics</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="text-slate-600 dark:text-slate-300 mt-2">
+
+        <!-- Header -->
+        <header>
+            <h1 class="text-3xl font-bold">Day 9 - Dark Mode Basics</h1>
+            <p class="text-slate-600">
+                Topic: using Tailwind&apos;s <span class="font-mono">dark:</span> variant.
+            </p>
+        </header>
+
+        <!-- Section 1 - Notes -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-300 dark:border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+                <li>
+                    Dark mode is controlled using the <span class="font-mono">dark:</span> prefix.
+                </li>
+                <li>
+                    Adding the <span class="font-mono">dark</span> class enables dark styles.
+                </li>
+                <li>
+                    Only colors usually change between light and dark modes.
+                </li>
+                <li>
+                    Layout and spacing typically remain the same.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2 - Practice -->
+        <section class="space-y-4 pt-4">
+            <h2 class="text-xl font-semibold border-b border-slate-300 dark:border-slate-700 pb-2">
+                Practice (Day 9 - Dark Mode)
+            </h2>
+
+            <p class="text-slate-700 dark:text-slate-300">
+                Toggle the <span class="font-mono">dark</span> class on the body and observe changes.
+            </p>
+        </section>
+
+        <!--
+            TODO: Day 9 Practice Tasks
+
+            1) Create a card or section with:
+            - Light background + dark background
+            - Light text + dark text
+            2) Use dark:bg-* and dark:text-* utilities
+            3) Confirm layout stays the same in both modes
+        -->
+
+        <!-- Your Day 9 practice Wait markup goes here -->
+        <div id="card" class="rounded-xl p-6 border shadow bg-white text-slate-900 border-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-700">
+            
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-200">
+                Day 9 - Dark mode
+            </span>
+
+            <div class="mt-4 space-y-2">
+                <h1 class="text-xl font-semibold">Hello!</h1>
+                <p class="text-slate-600 dark:text-slate-300">
+                    This card practices Tailwind's <span class="font-mono">dark:</span> variant for background, text, and borders.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
