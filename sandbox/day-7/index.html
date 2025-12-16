@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - Transitions & Hover</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <!-- Header -->
+        <header>
+            <h1 class="text-3xl font-bold">Day 7 - Transitions & Hove States</h1>
+            <p class="text-slate-300 mt-2">
+                Topic: adding subtle motion and interaction using hover and transition utilities.
+            </p>
+        </header>
+
+        <!-- Section 1 - Notes -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+                <li>
+                    Transitions make UI interactions feel smooth instead of abrupt.
+                </li>
+                <li>
+                    <span class="font-mono text-sky-400">transition</span> enables animations, and <span class="font-mono text-sky-400">duration-200</span> controls their speed.
+                </li>
+                <li>
+                    Hover utilities like <span class="font-mono text-sky-400">hover:bg-*</span> and <span class="font-mono text-sky-400">hover:-translate-y-1</span> add feedback.
+                </li>
+                <li>
+                    Cards feel more interactive with a slight lift and shadow on hover.
+                </li>
+                <li>
+                    Subtle effects feel professional; heavy animations feel distracting.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2 - Practice -->
+        <section class="space-y-6">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Practice (Day 7 - Hover & Transitions)
+            </h2>
+
+            <!--
+                TODO: Day 7 Practice Tasks
+
+                1) Buttons
+                - Add hover background color
+                - Add transition + duration-200
+                - Optional: focus ring for accessibility
+
+                2) Cards
+                - Create a card with:
+                    - bg-slate-800
+                    - rounded-xl
+                    - p-6
+                - Add:
+                    - transition
+                    - hover:-translate-y-1
+                    - hover:shadow-lg
+
+                3) Links / Text
+                - Create a link or inline text
+                - Add:
+                    - hover:text-sky-400
+                    - transition
+
+                Keep effects subtle and consistent.
+            -->
+
+            <div class="space-y-8">
+                <!-- buttons -->
+                <button title="practice-button" class="bg-green-500 hover:bg-green-800 transition duration-200 p-2 rounded-xl">Submit</button>
+
+                <!-- cards -->
+                <div id="card" class="bg-slate-800 rounded-xl p-6">
+                    <h1 class="text-center">
+                        Hello!
+                    </h1>
+                    <p>
+                        This is a card created for day 7 practice.
+                    </p>
+                </div>
+
+                <!-- links -->
+                <a href="#" class="hover:text-sky-400 transition">Back to Homepage</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
