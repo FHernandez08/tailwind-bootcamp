@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Layout Containers</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+
+    <!-- Page Wrapper -->
+    <div class="space-y-24">
+
+        <!-- Header -->
+        <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+            <h1 class="text-3xl font-bold">Day 8 - Layout Containers & Spacing</h1>
+            <p class="text-slate-300 mt-2">
+                Topic: consistent containers, section spacing, and clean layout structure.
+            </p>
+        </header>
+
+        <!-- Section 1 - Notes -->
+        <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-dict list-inside space-y-2 text-slate-300">
+                <li>
+                    Containers prevent content from stretching too wide on large screens.
+                </li>
+                <li>
+                    <span class="font-mono text-sky-400">max-w-5xl mx-auto</span> centers and limits width.
+                </li>
+                <li>
+                    <span class="font-mono text-sky-400">px-4 sm:px-6 lg:px-8</span> ensures safe padding at all times.
+                </li>
+                <li>
+                    Vertical spacing should be consistent using <span class="font-mono text-sky-400">py-*</span>.
+                </li>
+                <li>
+                    Every section should follow the same layout pattern.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2 - Practice -->
+        <section class="space-y-16">
+
+            <!-- Practice Header -->
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                    Practice (Day 8 - Layout Containers)
+                </h2>
+                <p class="text-slate-300 mt-2">
+                    Practice stacking sections with consistent containers and spacing.
+                </p>
+            </div>
+
+            <!--
+                TODO: Day 8 Practice Tasks
+
+                1) Create TWO sections stacked vertically
+                2) Each section should:
+                - Use the same container pattern
+                - Have py-16 or py-20
+                3) Inside each section:
+                - Section header (reuse from Day 6)
+                - Placeholder content (text, grid, or cards)
+
+                Goal: both sections should feel aligned and consistent.
+            -->
+
+            <!-- Your Day 8 sections go here -->
+            <section id="vertical-1" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 font-mono">
+                <div id="section-header" class="pb-2">
+                    <h1 id="title" class="text-2xl font-semibold text-sky-400">This will be the title of the section.</h1>
+                    <p class="text-slate-300">This would be used to have the short description.</p>
+                </div>
+
+                <div id="card" class="bg-slate-800 rounded-xl p-6">
+                    <h1 class="text-center">
+                        Hello!
+                    </h1>
+                    <p>
+                        This is a card created for day 7 practice.
+                    </p>
+                </div>
+            </section>
+
+            <section id="vertical-2" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 font-mono">
+                <div id="section-header" class="pb-2">
+                    <h1 id="title" class="text-2xl font-semibold text-sky-400">This will be the title of the section.</h1>
+                    <p class="text-slate-300">This would be used to have the short description.</p>
+                </div>
+
+                <div id="card" class="bg-slate-800 rounded-xl p-6">
+                    <h1 class="text-center">
+                        Hello!
+                    </h1>
+                    <p>
+                        This is a card created for day 7 practice.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
