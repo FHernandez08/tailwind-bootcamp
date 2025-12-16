@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - Reusable UI Patterns</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <!-- Header -->
+        <header>
+            <h1 class="text-3xl font-bold">Day 6 - Reusable UI Patterns</h1>
+            <p class="text-slate-300 mt-2">
+                Topic: buttons, section headers, and tags that can be reused across the site.
+            </p>
+        </header>
+
+        <!-- Section 1 - Notes -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Notes (What I&apos;m Learning Today)
+            </h2>
+
+            <ul class="list-dict list-inside space-y-2 text-slate-300">
+                <li>
+                    Reusable UI patterns help keep styling consistent and reduce decision fatigue.
+                </li>
+                <li>
+                    Buttons usually come in two main variants: primary (solid) and secondary (outline/ghost).
+                </li>
+                <li>
+                    Section headers should follow the same structure and spacing across all sections.
+                </li>
+                <li>
+                    Tags / pills are small UI elements used for skills, tech stacks, or categories.
+                </li>
+                <li>
+                    The goal today is consistency, not perfection.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2 - Practice Area -->
+        <section class="space-y-6">
+            <h2 class="text-xl font-semibold border-b border-slate-700 pb-2">
+                Practice (Day 6)
+            </h2>
+
+            <p class="text-slate-300">
+                Use this section to define and practice reusable UI patterns.
+                You will reuse these patterns later when building the real portfolio.
+            </p>
+            <!--
+                TODO: Day 6 Practice Tasks
+
+                1) Buttons
+                - Create a PRIMARY button style:
+                    - Solid background
+                    - Clear hover state
+                    - Rounded corners
+                - Create a SECONDARY button style:
+                    - Border or ghost style
+                    - Subtle hover background
+
+                2) Section Header
+                - Create a reusable section header pattern:
+                    - Title (text-xl or text-2xl, font-semibold)
+                    - Short description (text-slate-300)
+                - This should feel like something you could reuse for:
+                    - About
+                    - Projects
+                    - Skills
+
+                3) Tags / Pills
+                - Create 4–6 tags with the same style:
+                    - text-sm
+                    - px / py padding
+                    - rounded-full
+                    - subtle background color
+
+                Focus on consistency, not creativity.
+            -->
+            
+            <div class="space-y-8">
+                <div id="buttons">
+                    <button id="primary" title="primary" class="bg-blue-600 hover:bg-blue-900 rounded-lg p-2">Primary Option</button>
+                    <button id="secondary" title="secondary" class="bg-slate-300 hover:bg-slate-700 p-2 rounded-lg">Secondary Option</button>
+                </div>
+
+                <div id="section-header">
+                    <h1 id="title" class="text-2xl font-semibold">This will be the title of the section.</h1>
+                    <p class="text-slate-300">This would be used to have the short description.</p>
+                </div>
+
+                <div id="tags" class="">
+                    <span class="text-sm px-2 py-2.5 rounded-full bg-blue-100 text-blue-800">Badge</span>
+                    <span class="text-sm px-2 py-2.5 rounded-full bg-blue-100 text-blue-800">Badge</span>
+                    <span class="text-sm px-2 py-2.5 rounded-full bg-blue-100 text-blue-800">Badge</span>
+                    <span class="text-sm px-2 py-2.5 rounded-full bg-blue-100 text-blue-800">Badge</span>
+                    <span class="text-sm px-2 py-2.5 rounded-full bg-blue-100 text-blue-800">Badge</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
